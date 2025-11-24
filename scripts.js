@@ -68,7 +68,7 @@ async function fetchWeather(lat, lon) {
 
 function displayWeather(data) {
     const periods = data.properties.periods;
-    let weatherHTML = '<h2>Weather Forecast</h2>';
+    let weatherHTML = '<h2>Weather Forecast</h2><br>' + latitude + ', ' + longitude + '<br>';
     periods.forEach(period => {
         weatherHTML += `
             <div class="weather-period">
